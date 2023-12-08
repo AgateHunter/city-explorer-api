@@ -3,12 +3,14 @@ const cors = require('cors');
 require('dotenv').config();
 const weatherData = require('./data/weather.json');
 
-// create a Forecast class
+// create a Forecast class. I'm testing to see if I have the right properties
 class Forecast{
-  constructor(lat,lon,searchQuery){
-    this.lat = lat;
-    this.lon = lon;
-    this.searchQuery = searchQuery;
+  constructor(date, description){
+    // this.lat = lat;
+    // this.lon = lon;
+    this.date = date;
+    this.location = description;
+    // this.searchQuery = searchQuery;
   }
 
   // create a method to get the data
